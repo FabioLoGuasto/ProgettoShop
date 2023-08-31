@@ -1,0 +1,124 @@
+/* --- login ---- */
+.form-control{
+    width:100%;
+}
+.logPasCont{
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+/* --- intestazione ---- */
+.heightIntest{
+    padding:100px;
+    background-color: #f7f2f2;
+    text-align: center;
+    font-family:"Arial", CURSIVE;
+    font-size: 450%;
+}
+
+/* --- navbar ---- */
+a{
+    color: black;
+    --bs-nav-link-hover-color:pink;
+    text-decoration: none;
+}
+a:hover {
+    color: pink; /* Cambia il colore del testo in rosa */
+    border-color: pink;
+}
+#textFamily{
+    font-family: "Helvetica";
+}
+
+
+
+/* --- img ---- */
+.size-image{
+    max-width: 100%;
+    height: 100%
+}  
+
+
+/*--- navbar dettaglio --- */
+.btnNavDet{
+    --bs-btn-color:black;
+    --bs-btn-bg:white;
+    --bs-btn-border-color:#dee2e6;
+    --bs-btn-hover-bg:white;
+    --bs-btn-hover-border-color:#dee2e6;
+    --bs-btn-hover-color:pink;
+    --bs-btn-active-bg:pink;
+    padding: 1%;
+}
+
+
+/* --- form ---- */
+.spazing{
+    padding-right:10%;
+    padding-left: 10%;
+}
+.btFontForm:hover{
+    color: pink;
+}
+.form-select-lg {
+border: 2px solid rgba(0,0,0,.075); /* aggiunge ombra */
+border-radius: 8px; /* aggiunge bordo */
+/* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+padding: 1%;
+width: 100%;
+}
+.form-select-lg option {
+color: black;
+}
+.formSearchBtn{
+    margin-top: 4%;
+    text-align: right;
+}
+.toast{
+    margin-top: 4%;
+    margin-right:40%;
+    margin-left: 40%;
+}
+
+
+/* --- tabella ---- */
+.table{
+    margin-top: 5%;
+}
+.invisible{
+    visibility: hidden;
+}
+#tBody{
+    cursor: pointer;
+}
+
+
+
+/* --- footer ---- */
+footer{
+    padding-top: 4rem; /* margine interno */
+    padding-bottom: 5rem; /* margine interno */
+    margin-top: 6rem; /* margine da quello che c'è sopra */
+    min-height: 15rem; /* grandezza del footer in altezza */
+    background-color: #f7f2f2;
+}
+footer .bi{
+    width: 3em;
+    height: 3em;
+    color: black;  
+}
+footer .bi:hover{
+    color: pink;  
+}
+footer .link a{
+    text-decoration: underline;
+    color:black;
+}
+footer .link a:hover{
+    text-decoration: underline;
+    color:pink;
+}
+.textcop{
+    color:black;
+}
+
