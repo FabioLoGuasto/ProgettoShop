@@ -183,8 +183,8 @@ class ArticoloFind extends Articolo{
                 // If there are no shops, show toast with dynamic argument
                 if(data.length === 0){
                     console.log("vuoto");
-                    this.toastBody.textContent = "THERE ARE NO SHOES WITH THESE CHOOSEN FIELDS !"; 
-                    toast.show();
+                    let message = "THERE ARE NO SHOES WITH THESE CHOOSEN FIELDS !"; 
+                    super.showToast("toastID", "toastBody", message); // Can i use this. instead of super. Don't need the instance of the parent class
                     table.classList.add('invisible'); // hide table if it's already active
                     return // the program stops and the table is not shown
                 }

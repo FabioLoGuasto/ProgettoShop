@@ -41,12 +41,6 @@ class ArticoloDettaglio extends Articolo{
     selectedModelDescription = " ";
     scelta = "";
 
-    // Variables for toast
-    cityShop = document.getElementById('cityShop'); 
-    toastEl = document.getElementById('toastID');
-    toastBody = document.getElementById('toastBody');
-    
-    
     /**
      * 
      * @override
@@ -173,8 +167,6 @@ class ArticoloDettaglio extends Articolo{
      */
     search(){
 
-        var toast = new bootstrap.Toast(this.toastEl); // inizializzo il toast
-        
         // Recupera i valori dal form
         var table = document.getElementById("table");
         var brand = document.getElementById('selectBrands').value;
@@ -196,9 +188,8 @@ class ArticoloDettaglio extends Articolo{
                 // If there are no shops, show toast with dynamic argument
                 if(data.length === 0){
                     console.log("vuoto");
-                    // art.showToast("NO SHOES WITH THIS SIZE !"); --------------------------------------------------------------------> ?
-                    this.toastBody.textContent = "NO SHOES WITH THIS SIZE !"; 
-                    toast.show();
+                    let message = "NO SHOES WITH THIS SIZE !"; 
+                    super.showToast("toastID", "toastBody", message); // Can i use this. instead of super. Don't need the instance of the parent class
                     table.classList.add('invisible'); // hide table if it's already active
                     return // the program stops and the table is not shown
                 }
@@ -647,5 +638,3 @@ class ArticoloDettaglio extends Articolo{
     
 }
 
-
-// const art = new Articolo(); -------------------------------------------------------------- ?
